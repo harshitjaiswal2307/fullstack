@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        #container
+        {
+            border: 2px solid yellow;
+            margin: 0px auto;
+            width: 1200px;
+            padding:5px;
+            border-radius:8px;
+        }
+        #container::after
+        {
+            clear: both;
+        }
+        #header
+        {
+            background-color: red;
+            color: white;
+            width: 100%;
+            height:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:10px ;
+            font-size: 35px;
+        }
+        #banner
+        {
+            width: 100%;
+            height: 100vh;
+            background-color:darkmagenta;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p
+        {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        #section1
+        {
+            height: 270px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #circle
+        {
+            border-radius: 50%;
+            background-color: orchid;
+            width: 235px;
+            height: 235px;
+            float: left;
+            margin: 25px;
+        }
+        #section2
+        {
+            width: 100%;
+            height: 350px;
+            margin-bottom: 10px;
+        }
+        #left
+        {
+            width: 50%;
+            height: 270px;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            color: hotpink;
+            font-size: 40px;
+        }
+        #art1,#art2,#art3
+        {
+            float: right;
+            width: 48%;
+            height: 82px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: greenyellow;
+            font-size: 25px;
+            color: hotpink;
+            margin-bottom: 10px;
+        }
+        #section3
+        {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+        .rect
+        {
+            height: 220px;
+            width: 275px;
+            background-color:khaki;
+            margin-right: 20px;
+            float: left;
+        }
+        #section3
+        {
+            width: 100%;
+            height:80px;
+            margin-bottom: 10px;
+        }
+        #footer
+        {
+            width: 100%;
+            height: 50px;
+            background-color:lawngreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            Header
+        </div>
+        <div id="banner">
+            Banner
+        </div>
+        <div id="section1">
+        <p>Section-1</p>
+        <div id="circle"></div>
+        <div id="circle"></div>
+        <div id="circle"></div>
+        <div id="circle"></div>
+        </div>
+        <div id="section2">
+            <p>Section-2</p>
+            <div id="left">
+                Main Content
+            </div>
+            <div id="right">
+                <div id="art1">Article - 1</div>
+                <div id="art2">Article - 2</div>
+                <div id="art3">Article - 3</div>
+            </div>
+        </div>
+        <div id="section3">
+            <p>Section-3</p>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+        </div>
+        <div id="section4">
+            <p>Section-4</p>
+            <div id="footer"> Footer</div>
+        </div>
+    </div>
+</body>
+</html>
