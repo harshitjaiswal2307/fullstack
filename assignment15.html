@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practical-15: Counter</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: greenyellow;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        h1{
+            color: white;
+            font-size: 50px;
+        }
+
+        button{
+            font-size: 25px;
+            background-color:red;
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 10px 70px;
+            outline: none;
+        }
+
+        #count {
+            color: yellow;
+            font-size: 50px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>COUNTER</h1>
+    <div class="container">
+        <button id="minus" onclick="sub()">-</button>
+        <span id="count">0</span>
+        <button onclick="add()">+</button>
+    </div>
+
+
+    <script>
+        var minus = document.getElementById("minus");
+        minus.disabled = true;
+        var counter = 0;
+        function sub() {
+            counter -= 1;
+            document.getElementById("count").innerHTML = counter;
+            if (counter == 0) {
+                minus.disabled = true;
+            }
+        }
+        function add() {
+            minus.disabled = false;
+            counter += 1;
+            document.getElementById("count").innerHTML = counter;
+        }
+    </script>
+</body>
+</html>
